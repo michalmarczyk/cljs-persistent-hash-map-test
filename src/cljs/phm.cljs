@@ -26,3 +26,12 @@
 
 (defn ^:export invokewrapperdefault [m k not-found]
   (m k not-found))
+
+(defn ^:export transientwrapper [m]
+  (transient m))
+
+(defn ^:export persistentwrapper [tm]
+  (persistent! tm))
+
+(defn ^:export assocbangwrapper [tm k v]
+  (assoc! tm k v))
