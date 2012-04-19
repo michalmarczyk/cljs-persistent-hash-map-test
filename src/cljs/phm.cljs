@@ -1,4 +1,5 @@
-(ns phm)
+(ns phm
+  (:use [phm.records :only [->RFoo ->RBar]]))
 
 (defn ^:export empty-obj-map []
   cljs.core.ObjMap/EMPTY)
@@ -35,3 +36,12 @@
 
 (defn ^:export assocbangwrapper [tm k v]
   (assoc! tm k v))
+
+(defn ^:export make-keyword [n]
+  (keyword n))
+
+(defn ^:export fresh-record-four-fields []
+  (->RFoo nil nil nil nil))
+
+(defn ^:export fresh-record-no-fields []
+  (->RBar))
