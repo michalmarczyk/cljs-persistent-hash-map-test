@@ -45,3 +45,18 @@
 
 (defn ^:export fresh-record-no-fields []
   (->RBar))
+
+(defn ^:export literal-map-4 [a s d f]
+  {:a a :s s :d d :f f})
+
+(defn ^:export literal-map-6 [a s d f g h]
+  {:a a :s s :d d :f f :g g :h h})
+
+(defn ^:export literal-map-8 [a s d f g h j k]
+  {:a a :s s :d d :f f :g g :h h :j j :k k})
+
+(defn ^:export literal-map-10 [a s d f g h j k l z]
+  {:a a :s s :d d :f f :g g :h h :j j :k k :l l :z z})
+
+(defn ^:export literal-map-12 [a s d f g h j k l z x c]
+  {:a a :s s :d d :f f :g g :h h :j j :k k :l l :z z :x x :c c})

@@ -5,8 +5,8 @@
   :source-path "src/clj/"
   :dependencies [[org.clojure/clojure "1.3.0"]
                  ;; locally built from
-                 ;; https://github.com/michalmarczyk/clojurescript/tree/phm2-transient
-                 [org.clojure/clojurescript "0.0-1079"]]
+                 ;; https://github.com/michalmarczyk/clojurescript/tree/reprecating-objmap-2
+                 [org.clojure/clojurescript "0.0-1110"]]
   :plugins [[lein-cljsbuild "0.1.7"]]
   :cljsbuild {:builds [{:source-path "src/cljs/"
                         :compiler {:output-to "phm.js"
