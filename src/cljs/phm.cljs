@@ -10,6 +10,9 @@
 (defn ^:export empty-persistent-hash-map []
   cljs.core.PersistentHashMap/EMPTY)
 
+(defn ^:export empty-persistent-array-map []
+  cljs.core.PersistentArrayMap/EMPTY)
+
 (defn ^:export assocwrapper [m k v]
   (assoc m k v))
 
