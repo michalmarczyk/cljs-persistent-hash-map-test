@@ -16,10 +16,10 @@
   (n->strm cljs.core.ObjMap/EMPTY n))
 
 (defn n->strphm [n]
-  (n->strphm cljs.core.PersistentHashMap/EMPTY n))
+  (n->strm cljs.core.PersistentHashMap/EMPTY n))
 
 (defn n->strpam [n]
-  (n->strphm cljs.core.PersistentArrayMap/EMPTY n))
+  (n->strm cljs.core.PersistentArrayMap/EMPTY n))
 
 (def test-range (range 4 65 4))
 
