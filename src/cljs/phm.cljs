@@ -71,4 +71,4 @@
   (conj coll o))
 
 (defn ^:export conjbangwrapper [tcoll o]
-  (conj! coll o))
+  (conj! tcoll o))
