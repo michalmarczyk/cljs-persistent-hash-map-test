@@ -69,3 +69,6 @@
 
 (defn ^:export conjwrapper [coll o]
   (conj coll o))
+
+(defn ^:export conjbangwrapper [tcoll o]
+  (conj! coll o))
