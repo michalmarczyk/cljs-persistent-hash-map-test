@@ -63,3 +63,9 @@
 
 (defn ^:export literal-map-12 [a s d f g h j k l z x c]
   {:a a :s s :d d :f f :g g :h h :j j :k k :l l :z z :x x :c c})
+
+(defn ^:export empty-persistent-vector []
+  cljs.core.PersistentVector/EMPTY)
+
+(defn ^:export conjwrapper [coll o]
+  (conj coll o))
